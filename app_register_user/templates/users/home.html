@@ -19,6 +19,7 @@
         </div>
     </nav>
     <form action="{% url 'list_users' %}" method="POST">
+        {% csrf_token %}
         <div class="container" style="text-align: center; font-size: 32px;">
             <h1>Regiser Users</h1>
             <label for="name">Name: </label>
