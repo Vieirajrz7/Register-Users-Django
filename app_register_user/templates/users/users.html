@@ -1,5 +1,9 @@
+{% extends 'users/base.html' %}
+{% block content %}
+
+<h1 style="text-align: center;">Registered Users</h1>
 <div class="container">
-    <table>
+    <table class="table table-bordered table-striped">
         <tr>
             <th>ID</th>
             <th>Name</th>
@@ -14,3 +18,5 @@
         {% endfor %}
     </table>
 </div>
+
+{% endblock %}
